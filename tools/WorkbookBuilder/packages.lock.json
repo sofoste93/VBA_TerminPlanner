@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net9.0": {
+      "EPPlus": {
+        "type": "Direct",
+        "requested": "[8.7.1, )",
+        "resolved": "8.7.1",
+        "contentHash": "ex6sXTZNoJzsw/C2EIhzMw4srBaDUmblrw52bu0//Xp4/IIERaD4m/soJhWeabMw5EIm3CjPN+sAdoqR+yoqLg==",
+        "dependencies": {
+          "EPPlus.Interfaces": "8.6.2",
+          "Microsoft.Extensions.Configuration.Json": "9.0.18",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "System.Security.Cryptography.Pkcs": "9.0.18",
+          "System.Security.Cryptography.Xml": "9.0.18"
+        }
+      },
+      "EPPlus.Interfaces": {
+        "type": "Transitive",
+        "resolved": "8.6.2",
+        "contentHash": "Xl1ncbV84UCz7QxcHuWjGa6PKXnOTwbC+y2ZdDqe5Zt5MbozWQINOwchcKW+agqx9Rybl2SQ3GdN1fbPIbjVOA=="
+      },
+      "Microsoft.Extensions.Configuration": {
+        "type": "Transitive",
+        "resolved": "9.0.18",
+        "contentHash": "IDxqTTYgFM0adTv9b+cRyQJD25+xBUbCDXxmqxfBAv/DFQch3MBVQ9bnHijRNKpEnSMAciA9uc+X1ArQ5zZDVw==",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.18",
+          "Microsoft.Extensions.Primitives": "9.0.18"
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions": {
+        "type": "Transitive",
+        "resolved": "9.0.18",
+        "contentHash": "jgC5SZeK94t8DXl836ifIM5gScNqknkOwISrY503eWg7AHBrv+fnwty+C9n35H4WvBjs8OY21jPlRRf7ESBK/g==",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "9.0.18"
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions": {
+        "type": "Transitive",
+        "resolved": "9.0.18",
+        "contentHash": "xyrk60TV1053M4iSK9XU13+MEBlM0tpKvT0OEw7jaj8E5mPudM+nHbay19woEFpJgKZS8Spijx2RNKJSXy6OVg==",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "9.0.18",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.18",
+          "Microsoft.Extensions.FileProviders.Abstractions": "9.0.18",
+          "Microsoft.Extensions.FileProviders.Physical": "9.0.18",
+          "Microsoft.Extensions.Primitives": "9.0.18"
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json": {
+        "type": "Transitive",
+        "resolved": "9.0.18",
+        "contentHash": "16PlXNzQ5FPJTObhaP/bNeeITsuqZdwRNpcHiWHI070+qN87611MgP2r2tyvuJK1x1TzPqxoTXT6SDaIXBM76A==",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "9.0.18",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.18",
+          "Microsoft.Extensions.Configuration.FileExtensions": "9.0.18",
+          "Microsoft.Extensions.FileProviders.Abstractions": "9.0.18"
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions": {
+        "type": "Transitive",
+        "resolved": "9.0.18",
+        "contentHash": "YqkFlTwnVSMuunsf8IT9b+KySfm6vnMBBM+CKYCfXfjRMQ62uFggVOEu4C2cgR4fXpEO1rZ6utUZC1KoYKgiSg==",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "9.0.18"
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical": {
+        "type": "Transitive",
+        "resolved": "9.0.18",
+        "contentHash": "SSuf6rk6NStm7B+5VWV3t2B1OMJbXbnJnY0fN3Rj7/LLAUBDMb2aiULVDDQuF0pQLgQ7qYCYCvSB3Rnjxpit6A==",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "9.0.18",
+          "Microsoft.Extensions.FileSystemGlobbing": "9.0.18",
+          "Microsoft.Extensions.Primitives": "9.0.18"
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing": {
+        "type": "Transitive",
+        "resolved": "9.0.18",
+        "contentHash": "a6w2LAPmr1EZNNq8Us174oR3yIH+hoJKp6LVgzQAKFVFdrNGf3c3FAq3oLAQGt+NxLWVCKsJJXQwaxl/rcGDmA=="
+      },
+      "Microsoft.Extensions.Primitives": {
+        "type": "Transitive",
+        "resolved": "9.0.18",
+        "contentHash": "hfHudMC5zDlwMrC0HiHOJesSHMvM+CdqjomjcV/YVzFq5dfSpBRvyRLm1n1Bfh41ZpQnyJzqX+YEo95BAmcDAQ=="
+      },
+      "Microsoft.IO.RecyclableMemoryStream": {
+        "type": "Transitive",
+        "resolved": "3.0.1",
+        "contentHash": "s/s20YTVY9r9TPfTrN5g8zPF1YhwxyqO6PxUkrYTGI2B+OGPe9AdajWZrLhFqXIvqIW23fnUE4+ztrUWNU1+9g=="
+      },
+      "System.Security.Cryptography.Pkcs": {
+        "type": "Transitive",
+        "resolved": "9.0.18",
+        "contentHash": "NKMKhUdLGNZryY9GXXTF5dXyP6S37EYXhiA2JYvwshJbd4DRq07IOS9it8Opi9atadvv5rlNkD76Mio+5Oo2aQ=="
+      },
+      "System.Security.Cryptography.Xml": {
+        "type": "Transitive",
+        "resolved": "9.0.18",
+        "contentHash": "UoE37brJoIJPMds6wqDaweVrORmdM3XDPGLRU01Mg6Koh3SjgogSfz4+zDsriaEluHMRCx/Qc7yeEw7F9QMcJA==",
+        "dependencies": {
+          "System.Security.Cryptography.Pkcs": "9.0.18"
+        }
+      }
+    }
+  }
+}

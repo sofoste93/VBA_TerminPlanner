@@ -1,0 +1,13 @@
+artifacts/
+tools/WorkbookBuilder/bin/
+tools/WorkbookBuilder/obj/
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.tmp
+~$*.xls*
+*.pfx
+*.p12
+.DS_Store

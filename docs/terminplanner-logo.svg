@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" role="img" aria-labelledby="title desc">
+  <title id="title">TerminPlanner</title>
+  <desc id="desc">A blue calendar orbit logo for the professional appointment planner.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#05385c"/><stop offset="1" stop-color="#1386b8"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="760" height="210" rx="24" fill="url(#bg)"/>
+  <g transform="translate(48 30)">
+    <circle cx="74" cy="74" r="67" fill="#062d49" stroke="#73d9ff" stroke-width="2"/>
+    <ellipse cx="74" cy="74" rx="82" ry="29" fill="none" stroke="#9ee8ff" stroke-width="2" transform="rotate(-16 74 74)" opacity=".75"/>
+    <circle cx="149" cy="51" r="5" fill="#dff8ff" filter="url(#glow)"/>
+    <rect x="38" y="38" width="72" height="68" rx="8" fill="#f8fdff"/>
+    <rect x="38" y="38" width="72" height="20" rx="8" fill="#1689c7"/>
+    <path d="M51 71h14v14H51zm20 0h14v14H71zm20 0h9v14h-9zM51 91h14v9H51zm20 0h14v9H71z" fill="#7bcbe9"/>
+  </g>
+  <text x="245" y="96" fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="54" font-weight="750" letter-spacing="2">TerminPlanner</text>
+  <text x="250" y="137" fill="#bdeaff" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" letter-spacing="5">PROFESSIONAL BLUE</text>
+  <text x="252" y="169" fill="#82b8d0" font-family="Consolas,monospace" font-size="12" letter-spacing="2">LOCAL APPOINTMENT WORKSPACE · VBA</text>
+</svg>

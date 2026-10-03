@@ -1,0 +1,46 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '9.0.x'
+          cache: true
+          cache-dependency-path: tools/WorkbookBuilder/packages.lock.json
+      - run: dotnet restore tools/WorkbookBuilder/WorkbookBuilder.csproj --locked-mode
+      - run: dotnet run --project tools/WorkbookBuilder/WorkbookBuilder.csproj --configuration Release --no-restore -- artifacts/TerminPlanner.xlsm
+      - name: Create distribution archives
+        shell: bash
+        run: |
+          mkdir -p artifacts/package artifacts/source
+          cp artifacts/TerminPlanner.xlsm README.md LICENSE SECURITY.md docs/QUICKSTART.md artifacts/package/
+          cp src/VBA/* artifacts/source/
+          cp LICENSE artifacts/source/
+          cd artifacts/package && zip -r ../TerminPlanner-1.0.0.zip .
+          cd ../source && zip -r ../TerminPlanner-VBA-Source-1.0.0.zip .
+          cd .. && sha256sum TerminPlanner.xlsm TerminPlanner-1.0.0.zip TerminPlanner-VBA-Source-1.0.0.zip > SHA256SUMS.txt
+      - uses: softprops/action-gh-release@v2
+        with:
+          name: TerminPlanner 1.0.0 · Professional Blue
+          body: |
+            The first working release of the original concept: a professional,
+            local-first appointment planner for desktop Excel with readable VBA
+            source, validation, search, upcoming overview and CSV export.
+
+            Review SECURITY.md before enabling macros. The VBA project is not
+            digitally signed; SHA-256 checksums are included.
+          files: |
+            artifacts/TerminPlanner.xlsm
+            artifacts/TerminPlanner-1.0.0.zip
+            artifacts/TerminPlanner-VBA-Source-1.0.0.zip
+            artifacts/SHA256SUMS.txt
